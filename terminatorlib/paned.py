@@ -94,6 +94,7 @@ class Paned(Container):
             top_window = self.get_toplevel()
             signals = {'close-term': self.wrapcloseterm,
                     'split-auto': self.split_auto,
+                    'split-auto-rev': self.split_auto_rev,
                     'split-horiz': self.split_horiz,
                     'split-vert': self.split_vert,
                     'title-change': self.propagate_title_change,

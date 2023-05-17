@@ -119,6 +119,7 @@ class PrefsEditor:
                         'rotate_cw'        : _('Rotate terminals clockwise'),
                         'rotate_ccw'       : _('Rotate terminals counter-clockwise'),
                         'split_auto'       : _('Split automatically'),
+                        'split_auto_rev'   : _('Split automatically reverse'),
                         'split_horiz'      : _('Split horizontally'),
                         'split_vert'       : _('Split vertically'),
                         'close_term'       : _('Close terminal'),
