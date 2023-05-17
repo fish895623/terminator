@@ -49,6 +49,8 @@ class Terminal(Gtk.VBox):
         'ungroup-all': (GObject.SignalFlags.RUN_LAST, None, ()),
         'split-auto': (GObject.SignalFlags.RUN_LAST, None,
             (GObject.TYPE_STRING,)),
+        'split-auto-rev': (GObject.SignalFlags.RUN_LAST, None,
+            (GObject.TYPE_STRING,)),
         'split-horiz': (GObject.SignalFlags.RUN_LAST, None,
             (GObject.TYPE_STRING,)),
         'split-vert': (GObject.SignalFlags.RUN_LAST, None,
@@ -1924,6 +1926,9 @@ class Terminal(Gtk.VBox):
 
     def key_split_auto(self):
         self.emit('split-auto', self.get_cwd())
+
+    def key_split_auto_rev(self):
+        self.emit('split-auto-rev', self.get_cwd())
 
     def key_split_horiz(self):
         self.emit('split-horiz', self.get_cwd())
